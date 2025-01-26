@@ -26,39 +26,43 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      <div className="container mx-auto px-4 flex items-center justify-between">
+      <div className="container mx-auto flex-col md:flex-row gap-4 px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <img src="/img/logo.png" alt="VidiVeda Logo" className="h-20 w-auto" />
+          <img
+            src="/img/logo.png"
+            alt="VidiVeda Logo"
+            className="h-20 w-auto"
+          />
           {/* <span className="ml-2 text-xl font-bold">VidiVeda</span> */}
         </div>
         <nav>
-  <ul className="flex space-x-5 text-black text-lg font-light">
-    <li className="relative group">
-      <Link href="#" className="hover:text-orange-500">
-        Find a Tutor
-      </Link>
-      <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
-    </li>
-    <li className="relative group">
-      <Link href="#" className="hover:text-orange-500">
-        Services
-      </Link>
-      <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
-    </li>
-    <li className="relative group">
-      <Link href="#" className="hover:text-orange-500">
-        Cities We Serve
-      </Link>
-      <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
-    </li>
-    <li className="relative group">
-      <Link href="#" className="hover:text-orange-500">
-        Know More
-      </Link>
-      <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
-    </li>
-  </ul>
-</nav>
+          <ul className="flex space-x-5 text-black text-lg font-light">
+            <li className="relative group">
+              <Link href="#" className="hover:text-orange-500">
+                Find a Tutor
+              </Link>
+              <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+            </li>
+            <li className="relative group">
+              <Link href="#" className="hover:text-orange-500">
+                Services
+              </Link>
+              <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+            </li>
+            <li className="relative group">
+              <Link href="#" className="hover:text-orange-500">
+                Cities We Serve
+              </Link>
+              <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+            </li>
+            <li className="relative group">
+              <Link href="#" className="hover:text-orange-500">
+                Know More
+              </Link>
+              <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+            </li>
+          </ul>
+        </nav>
 
         <div className="flex items-center space-x-4">
           <Link
