@@ -22,7 +22,7 @@ export default function Registration() {
             your role and fill out the necessary details to get started.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Left Section with Image */}
           <div className=" w-full flex justify-center mb-8 md:mb-0">
             <img
