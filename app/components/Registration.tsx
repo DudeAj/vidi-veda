@@ -82,7 +82,7 @@ export default function Registration() {
                 </label>
                 <textarea
                   placeholder="Write your queries here"
-                  rows="4"
+                  rows={4}
                   className="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
                 ></textarea>
               </div>
@@ -132,7 +132,7 @@ export default function Registration() {
                 </label>
                 <textarea
                   placeholder="Write your message here"
-                  rows="4"
+                  rows={4}
                   className="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
                 ></textarea>
               </div>

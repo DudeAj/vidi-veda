@@ -1,17 +1,23 @@
+"use client";
+
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
+import { RiMenu5Line } from "react-icons/ri";
 
 export default function Header() {
+  const handleMenuClick = () => {
+    console.log("Menu Clicked");
+  };
   return (
     <header className="bg-white shadow-md">
-      <div className="bg-orange-500 px-20 py-3 flex justify-between items-center">
+      <div className="bg-orange-500 px-5 md:px-20 py-3 flex justify-between items-center">
         <div className="text-gray-600 flex items-center gap-2">
           <FaWhatsapp size={28} color="#25d366" />
           <a href="tel:+919634347076" className="text-white text-lg font-bold">
             +91 9634347076
           </a>
         </div>
-        <div className="flex gap-3 items-center">
+        <div className="md:flex hidden gap-3 items-center">
           <Link
             href="#"
             className="text-orange-500 font-semibold px-5 py-1 rounded-full bg-white"
@@ -26,16 +32,21 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      <div className="container mx-auto flex-col md:flex-row gap-4 px-4 flex items-center justify-between">
-        <div className="flex items-center">
+      <div className="container pb-4 md:py-0 mx-auto flex-col md:flex-row gap-4 px-4 flex items-center justify-between">
+        <div className="flex w-full md:w-auto items-center justify-between">
           <img
             src="/img/logo.png"
             alt="VidiVeda Logo"
             className="h-20 w-auto"
           />
+          <div className="flex md:hidden justify-center items-center">
+            <span className="cursor-pointer" onClick={handleMenuClick}>
+              <RiMenu5Line size={32} />
+            </span>
+          </div>
           {/* <span className="ml-2 text-xl font-bold">VidiVeda</span> */}
         </div>
-        <nav>
+        <nav className="hidden md:block">
           <ul className="flex space-x-5 text-black text-lg font-light">
             <li className="relative group">
               <Link href="#" className="hover:text-orange-500">
@@ -63,7 +74,6 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-
         <div className="flex items-center space-x-4">
           <Link
             href="#"

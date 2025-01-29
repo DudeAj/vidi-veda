@@ -5,7 +5,7 @@ import About from "./components/About"
 import Services from "./components/Services"
 import Cities from "./components/Cities"
 import WhyChooseUs from "./components/WhyChooseUs"
-import Testimonials from "./components/Testimonials"
+import Testimonials from "./components/Testimonials";
 import CallToAction from "./components/CallToAction"
 import Footer from "./components/Footer"
 import 'slick-carousel/slick/slick.css';

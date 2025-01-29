@@ -1,52 +1,70 @@
-'use client'
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
+import Slider from "react-slick";
 
 export default function Cities() {
-  const [currentCity, setCurrentCity] = useState(0)
   const cities = [
-    { name: "BAREILLY", image: "/bareilly.jpg" },
+    { name: "BAREILLY", image: "https://tcsg.in/uploads/story/850X450/1667077359-1667077359-3115e.webp" },
+    { name: "Badaun", image: "https://tcsg.in/uploads/story/850X450/1667077359-1667077359-3115e.webp" },
+    { name: "Delhi", image: "https://tcsg.in/uploads/story/850X450/1667077359-1667077359-3115e.webp" },
+    { name: "Gurugram", image: "https://tcsg.in/uploads/story/850X450/1667077359-1667077359-3115e.webp" },
     // Add more cities here
-  ]
+  ];
+
+  const settings = {
+    
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Cities We Serve</h2>
-        <p className="text-center mb-12 max-w-2xl mx-auto">We Are Available Across Cities!</p>
-        <div className="relative">
-          {cities.map((city, index) => (
-            <div
-              key={index}
-              className={`transition-opacity duration-500 ${
-                index === currentCity ? "opacity-100" : "opacity-0 absolute inset-0"
-              }`}
-            >
-              <div className="relative h-96 rounded-lg overflow-hidden">
-                <img src={city.image || "/placeholder.svg"} alt={city.name} className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                  <h3 className="text-4xl font-bold text-white">{city.name}</h3>
+    <section className=" bg-white">
+      <div className="py-12 px-20 ">
+        <h3 className="text-orange-500 text-lg">
+          Cities We Serve
+        </h3>
+        <h2 className="text-5xl font-bold mt-2">
+          We Are Available{" "}
+          <span className="text-orange-500">Across Cities!</span>
+        </h2>
+        <div className="mt-8 px-4">
+          <Slider {...settings}>
+            {cities.map((city, index) => (
+              <div key={index} className="px-2 aspect-square">
+                <div className="rounded-lg h-full w-full shadow-lg overflow-hidden relative flex items-center justify-center bg-orange-400">
+                  {city.image ? (
+                    <img
+                      src={city.image}
+                      alt={city.name}
+                      className="absolute inset-0 w-full h-full object-cover opacity-50"
+                    />
+                  ) : null}
+                  <h3 className="text-white text-xl font-bold relative z-10">
+                    {city.name}
+                  </h3>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </Slider>
         </div>
-        <div className="flex justify-center mt-8 space-x-2">
-          {cities.map((_, index) => (
-            <button
-              key={index}
-              className={`w-3 h-3 rounded-full ${index === currentCity ? "bg-blue-600" : "bg-gray-300"}`}
-              onClick={() => setCurrentCity(index)}
-            />
-          ))}
-        </div>
-        <div className="text-center mt-8">
-          <button className="bg-blue-600 text-white px-6 py-2 rounded font-semibold hover:bg-blue-700 transition duration-300">
-            See More
+        <div className="flex justify-center mt-10">
+        <button className="bg-orange-500 text-white text-xl px-6 py-2 rounded-md hover:bg-orange-700 transition duration-300">
+            Read More
           </button>
         </div>
+       
       </div>
     </section>
-  )
+  );
 }
-
