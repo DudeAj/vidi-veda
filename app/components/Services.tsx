@@ -12,10 +12,10 @@ export default function Services() {
     slidesToScroll: 1,
     responsive: [
       {
-        arrows: false,
         breakpoint: 768, // Mobile
         settings: {
           slidesToShow: 1,
+          arrows: false,
         },
       },
     ],
