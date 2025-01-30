@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Button from "../ui/Button";
 
 export default function Registration() {
   const [showContact, setShowContact] = useState(false);
@@ -86,23 +87,15 @@ export default function Registration() {
                   className="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
                 ></textarea>
               </div>
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition duration-300"
-              >
-                Sign Up Now!
-              </button>
+              <Button type="submit">Sign Up Now!</Button>
             </form>
           </div>
         </div>
 
         <div className="text-center mt-8">
-          <button
-            onClick={() => setShowContact(!showContact)}
-            className="text-blue-600 font-medium hover:underline focus:outline-none"
-          >
+          <Button onClick={() => setShowContact(!showContact)}>
             {showContact ? "Hide Contact Us" : "Need Help? Contact Us"}
-          </button>
+          </Button>
         </div>
 
         {showContact && (
@@ -136,12 +129,7 @@ export default function Registration() {
                   className="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
                 ></textarea>
               </div>
-              <button
-                type="submit"
-                className="w-full bg-orange-500 text-white py-2 rounded-lg font-medium hover:bg-orange-600 transition duration-300"
-              >
-                Send Message
-              </button>
+              <Button type="submit">Send Message</Button>
             </form>
           </motion.div>
         )}

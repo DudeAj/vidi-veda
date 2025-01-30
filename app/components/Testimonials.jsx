@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Slider from "react-slick";
 import { FaStar } from "react-icons/fa6";
+import Button from "../ui/Button";
 
 export default function Testimonials() {
   const settings = {
@@ -63,7 +64,7 @@ export default function Testimonials() {
         <h3 className="text-5xl text-center font-semibold mb-4">
           What Our <span className="text-orange-500">Client Say</span>
         </h3>
-       
+
         <div className="mt-12">
           <Slider {...settings} className="px-4">
             {testimonials.map((service, index) => (
@@ -85,14 +86,16 @@ export default function Testimonials() {
                             className="object-cover w-20 h-20  overflow-hidden rounded-full "
                           />
                           <div className="ml-2 flex flex-col justify-center">
-                            <p className="text-lg items-center font-bold">{service?.name}</p>
+                            <p className="text-lg items-center font-bold">
+                              {service?.name}
+                            </p>
                             <p className="text-left">{service?.role}</p>
                           </div>
                         </div>
                         <div className="flex justify-center mt-10 gap-2">
                           {Array.from({ length: service.rating }).map(
                             (_, index) => (
-                              <FaStar key={index} size={24}/>
+                              <FaStar key={index} size={24} />
                             )
                           )}
                         </div>
@@ -105,9 +108,7 @@ export default function Testimonials() {
           </Slider>
         </div>
         <div className="flex justify-center mt-8">
-          <button className="bg-orange-500 text-white text-xl px-6 py-2 rounded-md hover:bg-orange-700 transition duration-300">
-            Read More
-          </button>
+          <Button>Read More</Button>
         </div>
       </div>
     </section>

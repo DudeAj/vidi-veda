@@ -1,3 +1,5 @@
+import Button from "../ui/Button";
+
 export default function WhyChooseAsTeacher() {
   const reasons = [
     {
@@ -45,9 +47,9 @@ export default function WhyChooseAsTeacher() {
           ))}
         </div>
         <div className="text-center mt-8">
-          <button className="bg-blue-600 text-white px-6 py-2 rounded font-semibold hover:bg-blue-700 transition duration-300">
+          <Button>
             Learn More
-          </button>
+          </Button>
         </div>
       </div>
       <div className="w-full md:w-5/12 flex flex-col justify-center items-center px-8">

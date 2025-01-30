@@ -1,3 +1,5 @@
+import Button from "../ui/Button";
+
 export default function WhyChooseUs() {
   const reasons = [
     {
@@ -29,10 +31,16 @@ export default function WhyChooseUs() {
     <section className="py-16 px-4 md:px-16 bg-gray-100 flex flex-col md:flex-row gap-4">
       <div className="w-full md:w-5/12 flex flex-col justify-center items-center px-8">
         <div className="w-full">
-          <img src="/img/tuition-1.png" className="aspect-square w-3/5 object-cover rounded-tr-[50px]" />
+          <img
+            src="/img/tuition-1.png"
+            className="aspect-square w-3/5 object-cover rounded-tr-[50px]"
+          />
         </div>
         <div className="w-full flex justify-end">
-          <img src="/img/tuition-2.png" className="aspect-square w-3/5 object-cover rounded-bl-[50px]" />
+          <img
+            src="/img/tuition-2.png"
+            className="aspect-square w-3/5 object-cover rounded-bl-[50px]"
+          />
         </div>
       </div>
       <div className="w-full md:w-7/12 mx-auto px-4">
@@ -53,9 +61,7 @@ export default function WhyChooseUs() {
           ))}
         </div>
         <div className="text-center mt-8">
-          <button className="bg-blue-600 text-white px-6 py-2 rounded font-semibold hover:bg-blue-700 transition duration-300">
-            Learn More
-          </button>
+          <Button>Learn More</Button>
         </div>
       </div>
     </section>

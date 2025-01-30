@@ -1,3 +1,5 @@
+import Button from "../ui/Button";
+
 export default function About() {
   return (
     <section className="py-16 bg-white">
@@ -64,9 +66,9 @@ export default function About() {
                 Affordable Price
               </li>
             </ul>
-            <button className="bg-orange-500 text-white text-xl px-6 py-2 rounded-md hover:bg-orange-700 transition duration-300">
+            <Button>
               Read More
-            </button>
+            </Button>
           </div>
         </div>
       </div>

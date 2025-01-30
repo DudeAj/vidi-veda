@@ -13,14 +13,14 @@ export default function CallToAction() {
             <button className="bg-orange-500 w-[200px] border border-transparent text-white px-1 md:px-6 py-2 md:py-3 rounded-lg text-lg hover:bg-white hover:border hover:border-orange-500 hover:text-orange-500 transition duration-300">
               Join as a Tutor
             </button>
-            <button className="bg-white text-black w-[200px] px-1 md:px-6 py-2 md:py-3 rounded-lg text-lg hover:bg-orange-500 hover:text-white transition duration-300">
+            <button className="bg-white text-black w-[200px] px-1 md:px-6 py-2 md:py-3 rounded-lg text-lg hover:text-orange-500 hover:border hover:border-orange-500 transition duration-300">
               Hire a Tutor
             </button>
           </div>
         </div>
         <div className="w-full md:w-1/2 relative h-[250px]">
-          <img src="/img/teacher.webp" alt="Teacher" className="rounded-lg h-64 md:h-96 absolute -bottom-8 md:-bottom-16 right-24 md:right-44" />
-          <img src="/img/child.webp" alt="Child" className="rounded-lg h-44 md:h-64 right-6 md:right-8 absolute -bottom-8 md:-bottom-16" />
+          <img src="/img/teacher.webp" alt="Teacher" className="rounded-lg h-64 md:h-96 absolute -bottom-8 md:-bottom-24 right-24 md:right-44" />
+          <img src="/img/child.webp" alt="Child" className="rounded-lg h-44 md:h-64 right-6 md:right-8 absolute -bottom-8 md:-bottom-24" />
         </div>
       </div>
     </section>

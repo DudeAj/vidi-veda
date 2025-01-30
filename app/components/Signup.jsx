@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../ui/Button";
 
 const SignupPage = () => {
   return (
@@ -10,7 +11,8 @@ const SignupPage = () => {
             <h1 className="text-3xl font-bold text-orange-500">ANFRA</h1>
           </div>
           <p className="text-gray-600 text-center mb-6">
-            All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+            All the Lorem Ipsum generators on the Internet tend to repeat
+            predefined chunks as necessary.
           </p>
           <img
             src="https://undraw.co/api/illustrations/random"
@@ -21,7 +23,9 @@ const SignupPage = () => {
 
         {/* Right Section */}
         <div className="flex-1 p-10">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Sign up Now</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+            Sign up Now
+          </h2>
           <form className="space-y-4">
             {/* Name Field */}
             <div>
@@ -62,9 +66,7 @@ const SignupPage = () => {
               .
             </div>
 
-            <button className="w-full bg-orange-500 text-white font-bold py-3 rounded-lg hover:bg-orange-600">
-              Register Account
-            </button>
+            <Button>Register Account</Button>
           </form>
 
           {/* Login Link */}

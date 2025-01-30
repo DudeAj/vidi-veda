@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Slider from "react-slick";
+import Button from "../ui/Button";
 
 export default function Cities() {
   const cities = [
@@ -72,9 +73,7 @@ export default function Cities() {
           </Slider>
         </div>
         <div className="mt-10">
-          <button className="bg-orange-500 text-white text-xl px-6 py-2 rounded-md hover:bg-orange-700 transition duration-300">
-            Read More
-          </button>
+          <Button>Read More</Button>
         </div>
       </div>
     </section>
