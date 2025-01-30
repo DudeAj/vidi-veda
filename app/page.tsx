@@ -5,6 +5,7 @@ import About from "./components/About"
 import Services from "./components/Services"
 import Cities from "./components/Cities"
 import WhyChooseUs from "./components/WhyChooseUs"
+import WhyChooseAsTeacher from './components/WhyChooseAsTeacher';
 import Testimonials from "./components/Testimonials";
 import CallToAction from "./components/CallToAction"
 import Footer from "./components/Footer"
@@ -24,6 +25,7 @@ export default function Home() {
         <Services />
         <Cities />
         <WhyChooseUs />
+        <WhyChooseAsTeacher/>
         <Testimonials />
         <CallToAction />
       </main>

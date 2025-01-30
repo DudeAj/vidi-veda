@@ -3,7 +3,7 @@ export default function CallToAction() {
     <section className="p-4 md:p-16  text-white">
       <div className="bg-black rounded-3xl p-8 md:p-16 flex flex-col md:flex-row">
         <div className="container px-0 md:px-4 w-full md:w-3/4">
-          <p className="mb-2 md:mb-6 text-sm lg:text-2xl">
+          <p className="mb-2 md:mb-6 text-md lg:text-2xl">
             Join Thousands of Students and Tutors on VidiVeda.
           </p>
           <h2 className="text-3xl md:text-7xl font-bold mb-4 md:mb-8">

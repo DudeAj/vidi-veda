@@ -68,14 +68,14 @@ export default function Testimonials() {
           <Slider {...settings} className="px-4">
             {testimonials.map((service, index) => (
               <div key={index} className="px-0 lg:px-2">
-                <div className="relative h-[500px] border rounded-2xl bg-orange-200">
+                <div className="relative h-auto md:h-[400px] border rounded-2xl bg-orange-200">
                   <div className="flex h-full w-full flex-col justify-center  top-0 bottom-0 items-center">
                     <div className="rounded-lg">
                       <div className="p-6 flex justify-center flex-col">
                         <h3 className="text-xl text-center text-black mb-2">
                           {service.title}
                         </h3>
-                        <p className="text-center px-36 text-lg">
+                        <p className="text-center px-2 md:px-36 text-lg">
                           {service.content}
                         </p>
                         <div className="flex justify-center mt-8">

@@ -1,4 +1,4 @@
-export default function WhyChooseUs() {
+export default function WhyChooseAsTeacher() {
   const reasons = [
     {
       title: "Certified Tutors",
@@ -26,20 +26,12 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-16 px-4 md:px-16 bg-gray-100 flex flex-col md:flex-row gap-4">
-      <div className="w-full md:w-5/12 flex flex-col justify-center items-center px-8">
-        <div className="w-full">
-          <img src="/img/tuition-1.png" className="aspect-square w-3/5 object-cover rounded-tr-[50px]" />
-        </div>
-        <div className="w-full flex justify-end">
-          <img src="/img/tuition-2.png" className="aspect-square w-3/5 object-cover rounded-bl-[50px]" />
-        </div>
-      </div>
+    <section className="py-16 px-4 md:px-16 bg-white flex flex-col md:flex-row gap-4">
       <div className="w-full md:w-7/12 mx-auto px-4">
-        <h3 className="text-orange-500 text-lg">Why Choose VidiVeda?</h3>
+        {/* <h3 className="text-orange-500 text-lg">Why Choose VidiVeda?</h3> */}
         <h2 className="text-5xl font-bold mt-2">
           Why Choose{" "}
-          <span className="text-orange-500">VidiVeda as a Student?</span>
+          <span className="text-orange-500">VidiVeda as a Teacher?</span>
         </h2>
         <div className="grid grid-cols-1 mt-4 md:grid-cols-2 gap-8">
           {reasons.map((reason, index) => (
@@ -56,6 +48,20 @@ export default function WhyChooseUs() {
           <button className="bg-blue-600 text-white px-6 py-2 rounded font-semibold hover:bg-blue-700 transition duration-300">
             Learn More
           </button>
+        </div>
+      </div>
+      <div className="w-full md:w-5/12 flex flex-col justify-center items-center px-8">
+        <div className="w-full">
+          <img
+            src="/img/tuition-1.png"
+            className="aspect-square w-3/5 object-cover rounded-tr-[50px]"
+          />
+        </div>
+        <div className="w-full flex justify-end">
+          <img
+            src="/img/tuition-2.png"
+            className="aspect-square w-3/5 object-cover rounded-bl-[50px]"
+          />
         </div>
       </div>
     </section>
